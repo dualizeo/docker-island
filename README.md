@@ -1,7 +1,7 @@
 # docker-island
 Fastest way to setup a Self-Hosted private cloud envrionment
 
-This documentation is a simple written summary to assist newcomers using Treafik for Self Hosted services requiring SSL, Port mapping and internal routing of docker services. This guide is a Reference Point for starting a docker self hosted network within a day (hopefully). Keep in mind the guide is a work in progress since it has not been thoroughly re-tested yet.
+This documentation is a simple written summary to assist newcomers using Treafik for Self Hosted services requiring SSL, Port mapping and internal routing of docker services. This guide is a Reference Point for starting a docker self hosted network within an hour or two (hopefully). Keep in mind the guide is always work in progress to help you speed through the process.
 
  (Recommended but no necessary)  installing an open source fast forwarding google chrome extension to go through YouTube videos at 2x or 3x the speed. https://github.com/igrigorik/videospeed 
 
