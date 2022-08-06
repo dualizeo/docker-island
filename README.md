@@ -19,10 +19,12 @@ This documentation is a simple written summary to assist newcomers using Treafik
 </details>
  -----------------
    
-## 1. Ubuntu+Docker+Docker Compose, Fresh install
+# 1. 
+## Ubuntu+Docker+Docker Compose, Fresh install
    Docker Installation and: https://www.youtube.com/watch?v=EL1Ex04iUcA ( watch up until 14:07 and be finished )
  
-## 2. DNS ( Domain Name System )
+# 2. 
+## DNS ( Domain Name System )
 ### Before starting it is also recommended to have a DNS program to manage your SubDomain.MyDomains.com entries 
 <details>
   <summary>Setup DNS for your Envrionment </summary>
