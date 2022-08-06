@@ -1,11 +1,11 @@
 # Docker-island
-## Fastest way to setup a Self-Hosted private cloud envrionment 🏝☁😎👍
+## Fastest way to setup a Self-Hosted private cloud envrionment  🏝☁😎👍
 
 This documentation is a simple written summary to assist newcomers using Treafik for Self Hosted services requiring SSL, Port mapping and internal routing of docker services. This guide is a Reference Point for starting a docker self hosted network within an hour or two (hopefully). Keep in mind the guide is always work in progress to help you speed through the process.
 
  (Recommended but no necessary)  installing an open source fast forwarding google chrome extension to go through YouTube videos at 2x or 3x the speed. https://github.com/igrigorik/videospeed 
 
-# 0. To start it is Recommended but no necessary using ProxMox for creating Virtual Ubuntu environments.
+## 0. To start it is Recommended but no necessary using ProxMox for creating Virtual Ubuntu environments.
 <details>
   <summary>Setup Proxmox:</summary>
   Instructions: https://www.youtube.com/watch?v=7OVaWaqO2aU
@@ -17,17 +17,19 @@ This documentation is a simple written summary to assist newcomers using Treafik
    (skip for now, needs more testing) In addition from a security a standpoint it is recommended but not necessary creating a Virtual LAN to avoid any attacks in your real LAN. https://www.youtube.com/watch?v=qTbeHpdHcqs
    ( if using a laptop or pc as your main setup, you can also purchase a USB to Ethernet Adapter for ProxMox to recognize it as an additional network which you can assign a VLAN, then you can start creating virtual machines on that VLAN )
 </details>
- 
+ -----------------
    
-1. Ubuntu+Docker+Docker Compose, Fresh install
+## 1. Ubuntu+Docker+Docker Compose, Fresh install
    Docker Installation and: https://www.youtube.com/watch?v=EL1Ex04iUcA ( watch up until 14:07 and be finished )
  
-## 2. Before starting it is also recommended to have a DNS program to manage your SubDomain.MyDomains.com entries 
+## 2. DNS ( Domain Name System )
+### Before starting it is also recommended to have a DNS program to manage your SubDomain.MyDomains.com entries 
 <details>
   <summary>Setup DNS for your Envrionment </summary>
    1. for example mapping your local 192.168.10.5:9000 translated into portainer.mydomain.com therefore making it easier for you to Name your docker services as sub domains for easier management. (in addition Traefik will help routing to the correct services) Having a DNS program will allow you to edit and manage your DNS entries using AdGuard or Pi-Hole DNS. Make sure to reload browser after adding a DNS entry if Installing Adguard from the SNAP store. 
    * If you install Adguard  ( Adgurd->Filters->DNS Rewrites)
 </details>
+
 --------------------
 
 Also CloudFlare allows you to add DNS entries from their website but it is not recommended as it exposes another attack vulnerability to your network. A better solution is to install a Local DNS management software on your network. so you can lessen attacks and keep your internal IP and ports routing Locally to your system and services. ( you can install it on the same system or an a external ProxMox virtual machine or on a Raspberry Pie to point it to your Treafik setup. The easy way is to install AdGuard from the Ubuntu Software App store (SNAP) you simply search and download AdGuard. Or visit Pi-Hole website and run the automated script that will guide you through the process.
