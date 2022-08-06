@@ -17,12 +17,13 @@ This documentation is a simple written summary to assist newcomers using Treafik
 1. Ubuntu+Docker+Docker Compose, Fresh install
    Docker Installation and: https://www.youtube.com/watch?v=EL1Ex04iUcA ( watch up until 14:07 and be finished )
  
-## 2. Before starting it is also recommended to have a DNS program to manage your Domain Name System entries,
+## 2. Before starting it is also recommended to have a DNS program to manage your SubDomain.MyDomains.com entries ye2
 <details>
-  <summary>Setup DNS</summary>
+  <summary>Setup DNS for your Envrionment 2</summary>
    1. for example mapping your local 192.168.10.5:9000 translated into portainer.mydomain.com therefore making it easier for you to Name your docker services as sub domains for easier management. (in addition Traefik will help routing to the correct services) Having a DNS program will allow you to edit and manage your DNS entries using AdGuard or Pi-Hole DNS. Make sure to reload browser after adding a DNS entry if Installing Adguard from the SNAP store. 
    * If you install Adguard  ( Adgurd->Filters->DNS Rewrites)
 </details>
+--------------------
 
 Also CloudFlare allows you to add DNS entries from their website but it is not recommended as it exposes another attack vulnerability to your network. A better solution is to install a Local DNS management software on your network. so you can lessen attacks and keep your internal IP and ports routing Locally to your system and services. ( you can install it on the same system or an a external ProxMox virtual machine or on a Raspberry Pie to point it to your Treafik setup. The easy way is to install AdGuard from the Ubuntu Software App store (SNAP) you simply search and download AdGuard. Or visit Pi-Hole website and run the automated script that will guide you through the process.
 Pi-Hole One step automated install: https://github.com/pi-hole/pi-hole/#one-step-automated-install the gotcha's are changing your DNS on your resolv.conf to your local ip
