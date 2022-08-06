@@ -17,7 +17,7 @@ This documentation is a simple written summary to assist newcomers using Treafik
 1. Ubuntu+Docker+Docker Compose, Fresh install
    Docker Installation and: https://www.youtube.com/watch?v=EL1Ex04iUcA ( watch up until 14:07 and be finished )
  
-## 2. Before starting it is also recommended to have a DNS program to manage your SubDomain.MyDomains.com entries ye2
+## 2. Before starting it is also recommended to have a DNS program to manage your SubDomain.MyDomains.com entries  test2
 <details>
   <summary>Setup DNS for your Envrionment 2</summary>
    1. for example mapping your local 192.168.10.5:9000 translated into portainer.mydomain.com therefore making it easier for you to Name your docker services as sub domains for easier management. (in addition Traefik will help routing to the correct services) Having a DNS program will allow you to edit and manage your DNS entries using AdGuard or Pi-Hole DNS. Make sure to reload browser after adding a DNS entry if Installing Adguard from the SNAP store. 
