@@ -1,5 +1,5 @@
-# docker-island
-Fastest way to setup a Self-Hosted private cloud envrionment
+# Docker-island
+## Fastest way to setup a Self-Hosted private cloud envrionment 🏝☁😎👍
 
 This documentation is a simple written summary to assist newcomers using Treafik for Self Hosted services requiring SSL, Port mapping and internal routing of docker services. This guide is a Reference Point for starting a docker self hosted network within an hour or two (hopefully). Keep in mind the guide is always work in progress to help you speed through the process.
 
