@@ -3,7 +3,7 @@
 
 This documentation is a simple written summary to assist newcomers setting up a Self Hosted Envrionment requiring SSL, Port mapping and internal routing of docker services. This guide is meant to an easy Reference for starting a self hosted network within an hour or two (hopefully). Keep in mind the guide is always work in progress to help you speed through the process.
 
-# 0. Setting up Proxmox 
+- ![#f03c15] # 0. Setting up Proxmox `#f03c15`
 To start it is Recommended but no necessary using ProxMox for creating Virtual Ubuntu environments.
 <details>
  <summary>Setup Proxmox:</summary> 
