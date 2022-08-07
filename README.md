@@ -5,7 +5,7 @@ This documentation is a simple written summary to assist newcomers setting up a 
 
 # 0. Setting up Proxmox 
 To start it is Recommended but no necessary using ProxMox for creating Virtual Ubuntu environments.
-<details>
+* <details>
  <summary>Setup Proxmox:</summary> 
   Instructions: https://www.youtube.com/watch?v=7OVaWaqO2aU
    Working as 2022 Q3 ^
