@@ -10,7 +10,7 @@ To start it is Recommended but no necessary using ProxMox for creating Virtual U
   Instructions: https://www.youtube.com/watch?v=7OVaWaqO2aU
    Working as 2022 Q3 ^
    It is best to use a hypervisor ( ProxMox ) for creating virtual machines in order to run different Ubuntu environments such as setting up a reverse proxy's and for other additional benefits such as taking snapshots to revert back changes or testing different Ubuntu Setups which will save you a lot of time.
-   
+
 
   (no need to view but this video but it provides you a list of benefits for using virtual machines:)
    https://www.youtube.com/watch?v=SVQmzaSabEQ
@@ -74,7 +74,7 @@ In CloudFlare make sure you create the api token before you proceed!
 # 5. Finally, Installing Treafik
 <details>
   <summary> Configuring your Digital Router</summary>
-  <details>
+
  using https://github.com/traefikturkey/onramp
    Hopefully this guide will help you to finally get Docker running with Treafik services correctly, and Many Thanks! to contributors from TechnoTim's discord Community for making TreafikTurkey and OnRamp! and to the Github community for making it easier than ever to setup your services!.
    So to finish off, Make sure You copy and paste the commands individually line by line in your terminal from onramp:
