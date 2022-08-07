@@ -1,11 +1,10 @@
 # Docker-island
-## Fastest way to setup a Self-Hosted private cloud envrionment  🏝☁😎👍
+## Fastest way to setup a Self-Hosted private cloud envrionment  🏝☁😎👍 2022
 
-This documentation is a simple written summary to assist newcomers using Treafik for Self Hosted services requiring SSL, Port mapping and internal routing of docker services. This guide is a Reference Point for starting a docker self hosted network within an hour or two (hopefully). Keep in mind the guide is always work in progress to help you speed through the process.
+This documentation is a simple written summary to assist newcomers setting up a Self Hosted Envrionment requiring SSL, Port mapping and internal routing of docker services. This guide is meant to be Easy and could be used as a Reference Point for starting a self hosted network within an hour or two (hopefully). Keep in mind the guide is always work in progress to help you speed through the process.
 
- (Recommended but no necessary)  installing an open source fast forwarding google chrome extension to go through YouTube videos at 2x or 3x the speed. https://github.com/igrigorik/videospeed 
-
-## 0. To start it is Recommended but no necessary using ProxMox for creating Virtual Ubuntu environments.
+# 0. Setting up Proxmox 
+## To start it is Recommended but no necessary using ProxMox for creating Virtual Ubuntu environments.
 <details>
   <summary>Setup Proxmox:</summary>
   Instructions: https://www.youtube.com/watch?v=7OVaWaqO2aU
@@ -19,32 +18,40 @@ This documentation is a simple written summary to assist newcomers using Treafik
 </details>
  -----------------
    
-# 1. 
-## Ubuntu+Docker+Docker Compose, Fresh install
-   Docker Installation and: https://www.youtube.com/watch?v=EL1Ex04iUcA ( watch up until 14:07 and be finished )
+# 1. Install Docker + Docker Compose
+<details>
+  <summary> Install Docker & Docker Compose </summary>
+Docker Installation Follow along video ( watch up until 14:07 and be finished ) : https://www.youtube.com/watch?v=EL1Ex04iUcA 
+</details>
  
-# 2. 
-## DNS ( Domain Name System )
+# 2. DNS ( Domain Name System )
 ### Before starting it is also recommended to have a DNS program to manage your SubDomain.MyDomains.com entries 
 <details>
   <summary>Setup DNS for your Envrionment </summary>
    1. for example mapping your local 192.168.10.5:9000 translated into portainer.mydomain.com therefore making it easier for you to Name your docker services as sub domains for easier management. (in addition Traefik will help routing to the correct services) Having a DNS program will allow you to edit and manage your DNS entries using AdGuard or Pi-Hole DNS. Make sure to reload browser after adding a DNS entry if Installing Adguard from the SNAP store. 
    * If you install Adguard  ( Adgurd->Filters->DNS Rewrites)
-</details>
 
---------------------
 
 Also CloudFlare allows you to add DNS entries from their website but it is not recommended as it exposes another attack vulnerability to your network. A better solution is to install a Local DNS management software on your network. so you can lessen attacks and keep your internal IP and ports routing Locally to your system and services. ( you can install it on the same system or an a external ProxMox virtual machine or on a Raspberry Pie to point it to your Treafik setup. The easy way is to install AdGuard from the Ubuntu Software App store (SNAP) you simply search and download AdGuard. Or visit Pi-Hole website and run the automated script that will guide you through the process.
 Pi-Hole One step automated install: https://github.com/pi-hole/pi-hole/#one-step-automated-install the gotcha's are changing your DNS on your resolv.conf to your local ip
 You can watch this video up till 4:06 and be done: https://youtu.be/dH3DdLy574M
+</details>
 
-3. To start using Treafik, it is Important to own a domain name as docker services will require SSL. You can purchase a cheap $6 dollar a year domain name preferably from CloudFlare or any other Service Provider. If purchased elsewhere make sure to point your NameServers to CloudFlare. ( 2022 Q3: cloudflare domain prices: .uk $4.76, .us $6.50, .com $8.57) or you can try free domains from https://www.freenom.com ( when searching for a domain it will trick you into thinking it has been taken but it's not true, just enter the ending of the domain you want, example: myfreedomain.tk to get it when searching for it )
+--------------------
+
+
+# 3. Setting up Your Digital Router 
+<details>
+  <summary>  To start using Treafik </summary>
+  it is Important to own a domain name as docker services will require SSL. You can purchase a cheap $6 dollar a year domain name preferably from CloudFlare or any other Service Provider. If purchased elsewhere make sure to point your NameServers to CloudFlare. ( 2022 Q3: cloudflare domain prices: .uk $4.76, .us $6.50, .com $8.57) or you can try free domains from https://www.freenom.com ( when searching for a domain it will trick you into thinking it has been taken but it's not true, just enter the ending of the domain you want, example: myfreedomain.tk to get it when searching for it )
   To buy a domain name from cloudflare you can find it via ( CloudFlare account -> Top Right, Add Site button ->Register a new domain with Cloudflare )
    https://www.cloudflare.com/products/registrar/
    It is necessary to create a CloudFlare account for using OnRamp, The CloudFlare account will be necessary as it will generate an API token which will be used to connect your free SSL to your Internal Treafik network. 
 Reference video only ( stop at 5:20 ) to move on with this guide: https://www.youtube.com/watch?v=b83S_N1kkJM
 What I did was add a "A" Record to my internal IP and a CNAME pointing to my Treafik subdomain example treafik.mydomain.com ( you can name it whatever etc.mydomain.com)
 In CloudFlare make sure you create the api token before you proceed! 
+</details>
+--------------------
 
 4. Your Personal Router, It is also important to do Port Mapping on your router in order to point the incoming SSL from CloudFlare connection to your internal Treafik computer.. the Ports from CloudFlare to your Ubuntu machine running Treafik example 192.168.10.etc. You can YouTube your router model on how to do port forwarding, it might be under WAN ->Virtual Server / Port Forwarding.
    Enabling it and by entering your HTTP server External Port 80 to Internal Port 80 and adding another Entry for HTTP Server External Port 443 to Internal 443 TCP protocol.
@@ -119,3 +126,5 @@ https://github.com/BaptisteBdn/docker-selfhosted-apps
 https://github.com/VirtualEstatePlanner/MegaDocker
 https://virtualestateplanner.github.io/MegaDocker/
 https://github.com/caprover/caprover
+
+ (Recommended but no necessary)  installing an open source fast forwarding google chrome extension to go through YouTube videos at 2x or 3x the speed. https://github.com/igrigorik/videospeed 
