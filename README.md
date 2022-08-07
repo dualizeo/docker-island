@@ -63,7 +63,7 @@ In CloudFlare make sure you create the api token before you proceed!
   <summary> Configuring your Peronsal Router</summary>
  It is also important to do Port Mapping on your router in order to point the incoming SSL from CloudFlare connection to your internal Treafik computer.. the Ports from CloudFlare to your Ubuntu machine running Treafik example 192.168.10.etc. You can YouTube your router model on how to do port forwarding, it might be under WAN ->Virtual Server / Port Forwarding.
 
-   Enabling it and by entering your HTTP server External Port 80 to Internal Port 80 and adding another Entry for HTTP Server External Port 443 to Internal 443 TCP protocol.
+   Enabling it and by entering your HTTP server External Port 80 to Internal Port 80 and adding another Entry for HTTP Server External Port 443 to Internal 80 TCP protocol.
 
    I managed to get it working before using Tim's Guide SSL on everything without port forwarding but it might not work for other services. There is also another guide made by DB Tech to avoid using Port Forwarding, just by using CloudFlare Zero Trust Tunnels ( not tested yet, but I heard people were getting banned in the comments due to TOS violations from using streaming services like kodi ) https://www.youtube.com/watch?v=m-RYTu-Qq3A or https://youtu.be/RUJy9fjoiy4
    </details>
