@@ -80,15 +80,15 @@ In CloudFlare make sure you create the api token before you proceed!
 
 `sudo mkdir /apps`
 
-sudo chown -R $USER:$USER /apps
+`sudo chown -R $USER:$USER /apps`
 
-cd /apps
+`cd /apps`
 
 git clone https://github.com/traefikturkey/onramp.git onramp
 
-cd onramp
+`cd onramp`
 
-make start-staging
+`make start-staging`
 
 Remove placeholder content including the brackets: < replace > example:
 HOST_NAME=< replace > with:
@@ -114,10 +114,10 @@ All there is to do is hit Left Ctrl + X to save! then it will say File Name to W
 Hit ENTER
 
 The make start-staging will run the Makefile script and will create a hidden .env file with your provided HOSTNAME and Token information, so if it's not working, you can always go back and edit the hidden file by running this command:
-cd /apps/onramp
-ls -lha
+`cd /apps/onramp`
+`ls -lha`
 ( you will see the .env listed )
-sudo nano .env
+`sudo nano .env`
 ( to edit the file ^ )
 
 * Go back and re-run the make start-staging 
@@ -129,9 +129,9 @@ Finally if you can verify you have SSL via your browser then you are good to pro
 ( just confirm you are getting SSL on your browser )
 Awesome if you did! Last thing to do now, is to take down the staging certificates to get real ones by doing so:
 
-make down-staging
+`make down-staging`
 and
-make
+`make`
 ^ this will get your real SSL certificates.
 
 Congrats now it's time to start spinning up instances of Docker services using the OnRamp commands: 
