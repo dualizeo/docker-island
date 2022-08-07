@@ -4,9 +4,9 @@
 This documentation is a simple written summary to assist newcomers setting up a Self Hosted Envrionment requiring SSL, Port mapping and internal routing of docker services. This guide is meant to be Easy and could be used as a Reference Point for starting a self hosted network within an hour or two (hopefully). Keep in mind the guide is always work in progress to help you speed through the process.
 
 # 0. Setting up Proxmox 
-## To start it is Recommended but no necessary using ProxMox for creating Virtual Ubuntu environments.
+To start it is Recommended but no necessary using ProxMox for creating Virtual Ubuntu environments.
 <details>
-  <summary>Setup Proxmox:</summary>
+ ### <summary>Setup Proxmox:</summary>
   Instructions: https://www.youtube.com/watch?v=7OVaWaqO2aU
    Working as 2022 Q3 ^
    It is best to use a hypervisor ( ProxMox ) for creating virtual machines in order to run different Ubuntu environments such as setting up a reverse proxy's and for other additional benefits such as taking snapshots to revert back changes or testing different Ubuntu Setups which will save you a lot of time.
@@ -16,11 +16,11 @@ This documentation is a simple written summary to assist newcomers setting up a 
    (skip for now, needs more testing) In addition from a security a standpoint it is recommended but not necessary creating a Virtual LAN to avoid any attacks in your real LAN. https://www.youtube.com/watch?v=qTbeHpdHcqs
    ( if using a laptop or pc as your main setup, you can also purchase a USB to Ethernet Adapter for ProxMox to recognize it as an additional network which you can assign a VLAN, then you can start creating virtual machines on that VLAN )
 </details>
- -----------------
+ 
    
 # 1. Install Docker + Docker Compose
 <details>
-  <summary> Install Docker & Docker Compose </summary>
+  <summary> ### Install Docker & Docker Compose </summary>
 Docker Installation Follow along video ( watch up until 14:07 and be finished ) : https://www.youtube.com/watch?v=EL1Ex04iUcA 
 </details>
  
@@ -28,7 +28,8 @@ Docker Installation Follow along video ( watch up until 14:07 and be finished ) 
 ### Before starting it is also recommended to have a DNS program to manage your SubDomain.MyDomains.com entries 
 <details>
   <summary>Setup DNS for your Envrionment </summary>
-   1. for example mapping your local 192.168.10.5:9000 translated into portainer.mydomain.com therefore making it easier for you to Name your docker services as sub domains for easier management. (in addition Traefik will help routing to the correct services) Having a DNS program will allow you to edit and manage your DNS entries using AdGuard or Pi-Hole DNS. Make sure to reload browser after adding a DNS entry if Installing Adguard from the SNAP store. 
+   1. for example mapping your local 192.168.10.5:9000 translated into portainer.mydomain.com therefore making it easier for you to Name your docker services as sub domains for easier management.
+    (in addition Traefik will help routing to the correct services) Having a DNS program will allow you to edit and manage your DNS entries using AdGuard or Pi-Hole DNS. Make sure to reload browser after adding a DNS entry if Installing Adguard from the SNAP store. 
    * If you install Adguard  ( Adgurd->Filters->DNS Rewrites)
 
 
