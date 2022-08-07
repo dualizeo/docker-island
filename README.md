@@ -28,7 +28,7 @@ Docker Installation Follow along video ( watch up until 14:07 and be finished ) 
 </details>
  
 # 2. DNS ( Domain Name System )
-### Before starting it is also recommended to have a DNS program to manage your SubDomain.MyDomains.com entries 
+Before starting it is also recommended to have a DNS program to manage your SubDomain.MyDomains.com entries 
 <details>
   <summary>Setup DNS for your Envrionment </summary>
    1. for example mapping your local 192.168.10.5:9000 translated into portainer.mydomain.com therefore making it easier for you to Name your docker services as sub domains for easier management.
