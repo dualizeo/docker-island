@@ -9,13 +9,10 @@ To start it is Recommended but no necessary using ProxMox for creating Virtual U
  <summary>Setup Proxmox:</summary> 
   Instructions: https://www.youtube.com/watch?v=7OVaWaqO2aU
    Working as 2022 Q3 ^
-   It is best to use a hypervisor ( ProxMox ) for creating virtual machines in order to run different Ubuntu environments such as setting up a reverse proxy's and for other additional benefits such as taking snapshots to revert back changes or testing different Ubuntu Setups which will save you a lot of time.
-   
+   It is best to use a hypervisor ( ProxMox ) for creating virtual machines in order to run different Ubuntu environments such as setting up a reverse proxy's and for other additional benefits such as taking snapshots to revert back changes or testing different Ubuntu Setups which will save you a lot of time.<p></p>
 
   (no need to view but this video but it provides you a list of benefits for using virtual machines:)
-   https://www.youtube.com/watch?v=SVQmzaSabEQ
-
-
+ https://www.youtube.com/watch?v=SVQmzaSabEQ 
      (skip for now, needs more testing) In addition from a security a standpoint it is recommended but not necessary creating a Virtual LAN to avoid any attacks in your real LAN. https://www.youtube.com/watch?v=qTbeHpdHcqs
    ( if using a laptop or pc as your main setup, you can also purchase a USB to Ethernet Adapter for ProxMox to recognize it as an additional network which you can assign a VLAN, then you can start creating virtual machines on that VLAN )
 </details>
