@@ -1,7 +1,7 @@
 # Docker-island
 ## Fastest way to setup a Self-Hosted private cloud in 2022  🏝☁😎👍 
 
-This documentation is a simple written summary to assist newcomers setting up a Self Hosted Envrionment requiring SSL, Port mapping and internal routing of docker services. This guide is meant to be Easy and could be used as a Reference Point for starting a self hosted network within an hour or two (hopefully). Keep in mind the guide is always work in progress to help you speed through the process.
+This documentation is a simple written summary to assist newcomers setting up a Self Hosted Envrionment requiring SSL, Port mapping and internal routing of docker services. This guide is meant to an easy Reference for starting a self hosted network within an hour or two (hopefully). Keep in mind the guide is always work in progress to help you speed through the process.
 
 # 0. Setting up Proxmox 
 To start it is Recommended but no necessary using ProxMox for creating Virtual Ubuntu environments.
@@ -57,7 +57,7 @@ In CloudFlare make sure you create the api token before you proceed!
 </details>
 
 
-# 4. Setting up Your  Router 
+# 4. Setting up Your Router 
 <details>
   <summary> Configuring your Peronsal Router</summary>
  It is also important to do Port Mapping on your router in order to point the incoming SSL from CloudFlare connection to your internal Treafik computer.. the Ports from CloudFlare to your Ubuntu machine running Treafik example 192.168.10.etc. You can YouTube your router model on how to do port forwarding, it might be under WAN ->Virtual Server / Port Forwarding.
@@ -69,8 +69,11 @@ In CloudFlare make sure you create the api token before you proceed!
    
 # 5. Finally, Installing Treafik
 <details>
-  <summary> Configuring your Digital Router</summary>
-
+  <summary> Configuring your Digital Router using PapaMica Setup:</summary>
+  Info coming soon.
+<details>
+  <summary> Configuring your Digital Router using OnRamp Setup:</summary>
+</details>
  using https://github.com/traefikturkey/onramp
    Hopefully this guide will help you to finally get Docker running with Treafik services correctly, and Many Thanks! to contributors from TechnoTim's discord Community for making TreafikTurkey and OnRamp! and to the Github community for making it easier than ever to setup your services!.
    So to finish off, Make sure You copy and paste the commands individually line by line in your terminal from onramp:
