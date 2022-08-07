@@ -1,7 +1,7 @@
 # Docker-island
 ## Fastest way to setup a Self-Hosted private cloud in 2022  🏝☁😎👍 
 
-This documentation is a simple written summary to assist newcomers setting up a Self Hosted Envrionment requiring SSL, Port mapping and internal routing of docker services. This guide is meant to an easy Reference for starting a self hosted network within an hour or two (hopefully). Keep in mind the guide is always work in progress to help you speed through the process.
+This documentation is a simple written summary to assist newcomers setting up a Self Hosted Envrionment requiring SSL, Port mapping and internal routing of docker services Using Ubuntu Desktop 😁. This guide is meant to an easy Reference for starting a self hosted network within an hour or two (hopefully). Keep in mind the guide is always work in progress to help you speed through the process.
 
 # 0. Setting up Proxmox 
 To start it is Recommended but no necessary using ProxMox for creating Virtual Ubuntu environments.
