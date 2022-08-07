@@ -6,7 +6,7 @@ This documentation is a simple written summary to assist newcomers setting up a 
 # 0. Setting up Proxmox 
 To start it is Recommended but no necessary using ProxMox for creating Virtual Ubuntu environments.
 <details>
- ### <summary>Setup Proxmox:</summary>
+ ### <summary>Setup Proxmox:</summary> 
   Instructions: https://www.youtube.com/watch?v=7OVaWaqO2aU
    Working as 2022 Q3 ^
    It is best to use a hypervisor ( ProxMox ) for creating virtual machines in order to run different Ubuntu environments such as setting up a reverse proxy's and for other additional benefits such as taking snapshots to revert back changes or testing different Ubuntu Setups which will save you a lot of time.
@@ -32,8 +32,8 @@ Docker Installation Follow along video ( watch up until 14:07 and be finished ) 
     (in addition Traefik will help routing to the correct services) Having a DNS program will allow you to edit and manage your DNS entries using AdGuard or Pi-Hole DNS. Make sure to reload browser after adding a DNS entry if Installing Adguard from the SNAP store. 
    * If you install Adguard  ( Adgurd->Filters->DNS Rewrites)
 
-
 Also CloudFlare allows you to add DNS entries from their website but it is not recommended as it exposes another attack vulnerability to your network. A better solution is to install a Local DNS management software on your network. so you can lessen attacks and keep your internal IP and ports routing Locally to your system and services. ( you can install it on the same system or an a external ProxMox virtual machine or on a Raspberry Pie to point it to your Treafik setup. The easy way is to install AdGuard from the Ubuntu Software App store (SNAP) you simply search and download AdGuard. Or visit Pi-Hole website and run the automated script that will guide you through the process.
+
 Pi-Hole One step automated install: https://github.com/pi-hole/pi-hole/#one-step-automated-install the gotcha's are changing your DNS on your resolv.conf to your local ip
 You can watch this video up till 4:06 and be done: https://youtu.be/dH3DdLy574M
 </details>
