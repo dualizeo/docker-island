@@ -70,12 +70,6 @@ In CloudFlare make sure you create the api token before you proceed!
    
 # 5. Finally, Installing Treafik
 <details>
-  <summary> Configuring your Digital Router using PapaMica Setup:</summary>
-  Info coming soon.
-
-</details>
----------------
-<details>
   <summary> Configuring your Digital Router using OnRamp Setup:</summary>
 
  using https://github.com/traefikturkey/onramp
