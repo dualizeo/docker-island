@@ -136,6 +136,7 @@ make enable-service portainer
 make restart
 ^ After enabling a service, make sure to run (make restart) in order for the service to show up in your treafik dashboard.
 </details>
+---------------
 
 Hopefully this guide can help you to facilitate the process or if you come across problems.
 Feel free to provide feedback for anyone reading this guide and if this worked for you, please provide feedback and how long it took you to get up and running Traefik thanks.
