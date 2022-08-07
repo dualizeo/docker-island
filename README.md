@@ -74,7 +74,7 @@ In CloudFlare make sure you create the api token before you proceed!
 # 5. Finally, Installing Treafik
 <details>
   <summary> Configuring your Digital Router</summary>
-  <details>
+
  using https://github.com/traefikturkey/onramp
    Hopefully this guide will help you to finally get Docker running with Treafik services correctly, and Many Thanks! to contributors from TechnoTim's discord Community for making TreafikTurkey and OnRamp! and to the Github community for making it easier than ever to setup your services!.
    So to finish off, Make sure You copy and paste the commands individually line by line in your terminal from onramp:
