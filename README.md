@@ -25,10 +25,11 @@ Docker Installation Follow along video ( watch up until 14:07 and be finished ) 
 </details>
  
 # 2. DNS ( Domain Name System )
-Before starting it is also recommended to have a DNS program to manage your SubDomain.MyDomains.com entries othewise it wil not work
 <details>
   <summary>Setup DNS for your Envrionment </summary>
-   1. for example mapping your local 192.168.10.5:9000 translated into portainer.mydomain.com therefore making it easier for you to Name your docker services as sub domains for easier management.
+Before starting it is also recommended to have a DNS program to manage your SubDomain.MyDomains.com entries othewise it wil not work.
+
+   For example mapping your local 192.168.10.5:9000 translated into portainer.mydomain.com therefore making it easier for you to Name your docker services as sub domains for easier management.
     (in addition Traefik will help routing to the correct services) Having a DNS program will allow you to edit and manage your DNS entries using AdGuard or Pi-Hole DNS. Make sure to reload browser after adding a DNS entry if Installing Adguard from the SNAP store. 
  * If you install Adguard through the SNAP Store, check the description and click on `Show More` to access your Adguard url ( Adgurd->Filters->DNS Rewrites) <p></p>
 
