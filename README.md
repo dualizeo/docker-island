@@ -95,26 +95,37 @@ cd onramp
 
 make start-staging
 
-Remove placeholder content including the brackets: < replace > example: 
+Remove placeholder content including the brackets: < replace > example:
 HOST_NAME=< replace > with:
 HOST_NAME=mypcname
-
-If you don't know your hostname, in Ubuntu you can view it by:
+^ If you don't know your hostname, in Ubuntu you can view it by:
 right clicking on ubuntu desktop ->Display Settings -> left side, scroll all the way down to About -> Device Name ( you will find your host name) if you would like to change it will require a Restart.
 
+Also Replace
+TZ= (with your Time zone ) just google it to find your proper format because Los Angeles requires an underscore Los_Angeles.
 make sure it is in the correct directory ! don't clone it anywhere else. I believe the correct directory is Computer/apps/onramp. You can verify by clicking in Ubuntu Files -> Left Side +Other Locations -> Computer -> Apps -> onramp
 That's where the make start-staging script should run.
 
- Also if you mess up, don't stress out, you can edit the script again.
+Also if you mess up, don't stress out, you can edit the script again since you are in Staging ( Testing Mode )
 
-the make start-staging will run the Makefile script and will create a hidden .env file with your provided HOSTNAME and Token information, so if it's not working, you can always go back and edit the hidden file by running this command:
- cd /apps/onramp
+*** Now that you have filled out your:**
+CF_API_EMAIL=your email
+CF_DNS_API_TOKEN=blablaToKenblablaEXAMPLE
+HOST_NAME=PCname
+HOST_DOMAIN=yourdomain.com
+TZ=US/City
+
+All there is to do is hit Left Ctrl + X to save! then it will say File Name to Write: .env
+Hit ENTER
+
+The make start-staging will run the Makefile script and will create a hidden .env file with your provided HOSTNAME and Token information, so if it's not working, you can always go back and edit the hidden file by running this command:
+cd /apps/onramp
 ls -lha
- ( you will see the .env listed )
- sudo nano .env
+( you will see the .env listed )
+sudo nano .env
 ( to edit the file ^ )
 
-go back and re-run the make start-staging 
+* Go back and re-run the make start-staging 
 if something is not working, go back to check on your CloudFlare to make sure you "A" record is pointing to your home IP and as previously mentioned a CNAME record to your subdomain example: ( treafik.mydomain.com ) 
 
 Once you get it working it the script will get you Staging SSL certificate for testing to make sure your connection went through. If you can confirm it's working, you can do so by click the url link it provided to you for your treafik dashboard ( from running the script in terminal. )
