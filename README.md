@@ -92,60 +92,60 @@ In CloudFlare make sure you create the api token before you proceed!
 `make start-staging`
 
 Remove placeholder content including the brackets: < replace > example:
-HOST_NAME=< replace > with:
-HOST_NAME=mypcname
-^ If you don't know your hostname, in Ubuntu you can view it by:
+HOST_NAME=< replace > with:<p>
+HOST_NAME=mypcname<p>
+^ If you don't know your hostname, in Ubuntu you can view it by:<p>
 right clicking on ubuntu desktop ->Display Settings -> left side, scroll all the way down to About -> Device Name ( you will find your host name) if you would like to change it will require a Restart.
 
 Also Replace
-TZ= (with your Time zone ) just google it to find your proper format because Los Angeles requires an underscore Los_Angeles.
+TZ= (with your Time zone ) just google it to find your proper format because Los Angeles requires an underscore Los_Angeles.<p>
 make sure it is in the correct directory ! don't clone it anywhere else. I believe the correct directory is Computer/apps/onramp. You can verify by clicking in Ubuntu Files -> Left Side +Other Locations -> Computer -> Apps -> onramp
 That's where the make start-staging script should run.
 
 Also if you mess up, don't stress out, you can edit the script again since you are in Staging ( Testing Mode )
 
-*** Now that you have filled out your:**
-CF_API_EMAIL=your email
-CF_DNS_API_TOKEN=blablaToKenblablaEXAMPLE
-HOST_NAME=PCname
-HOST_DOMAIN=yourdomain.com
-TZ=US/City
+*** Now that you have filled out your:**<p>
+CF_API_EMAIL=your email<p>
+CF_DNS_API_TOKEN=blablaToKenblablaEXAMPLE<p>
+HOST_NAME=PCname<p>
+HOST_DOMAIN=yourdomain.com<p>
+TZ=US/City<p>
 
-All there is to do is hit Left Ctrl + X to save! then it will say File Name to Write: .env
-Hit ENTER
+All there is to do is hit Left Ctrl + X to save! then it will say File Name to Write: .env<p>
+Hit ENTER<p>
 
-The make start-staging will run the Makefile script and will create a hidden .env file with your provided HOSTNAME and Token information, so if it's not working, you can always go back and edit the hidden file by running this command:
+The make start-staging will run the Makefile script and will create a hidden .env file with your provided HOSTNAME and Token information, so if it's not working, you can always go back and edit the hidden file by running this command:<p>
 `cd /apps/onramp`
 `ls -lha`
 ( you will see the .env listed )
 `sudo nano .env`
 ( to edit the file ^ )
 
-* Go back and re-run the make start-staging 
-if something is not working, go back to check on your CloudFlare to make sure you "A" record is pointing to your home IP and as previously mentioned a CNAME record to your subdomain example: ( treafik.mydomain.com ) 
+* Go back and re-run the make start-staging <p>
+if something is not working, go back to check on your CloudFlare to make sure you "A" record is pointing to your home IP and as previously mentioned a CNAME record to your subdomain example: ( treafik.mydomain.com ) <p>
 
-Once you get it working it the script will get you Staging SSL certificate for testing to make sure your connection went through. If you can confirm it's working, you can do so by click the url link it provided to you for your treafik dashboard ( from running the script in terminal. )
+Once you get it working it the script will get you Staging SSL certificate for testing to make sure your connection went through. If you can confirm it's working, you can do so by click the url link it provided to you for your treafik dashboard ( from running the script in terminal. )<p>
 
-Finally if you can verify you have SSL via your browser then you are good to proceed to the final step which is taking down the staging certificates to get real SSL certificates
-( just confirm you are getting SSL on your browser )
-Awesome if you did! Last thing to do now, is to take down the staging certificates to get real ones by doing so:
+Finally if you can verify you have SSL via your browser then you are good to proceed to the final step which is taking down the staging certificates to get real SSL certificates<p>
+( just confirm you are getting SSL on your browser )<p>
+Awesome if you did! Last thing to do now, is to take down the staging certificates to get real ones by doing so:<p>
 
 `make down-staging`
 and
 `make`
 ^ this will get your real SSL certificates.
 
-Congrats now it's time to start spinning up instances of Docker services using the OnRamp commands: 
-make list-services
+Congrats now it's time to start spinning up instances of Docker services using the OnRamp commands: <p>
+`make list-services`
 
-and to install them for example: 
-make enable-service portainer
-make restart
-^ After enabling a service, make sure to run (make restart) in order for the service to show up in your treafik dashboard.
+and to install them for example: <p>
+`make enable-service portainer`
+`make restart`
+^ After enabling a service, make sure to run (make restart) in order for the service to show up in your treafik dashboard.<p>
 </details>
 ---------------
 
-Hopefully this guide can help you to facilitate the process or if you come across problems.
+Hopefully this guide can help you to facilitate the process or if you come across problems.<p>
 Feel free to provide feedback for anyone reading this guide and if this worked for you, please provide feedback and how long it took you to get up and running Traefik thanks.
 
 Other Collections of Self Hosted Treafik setups to consider:
