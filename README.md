@@ -148,7 +148,7 @@ and to install them for example: <p>
 Hopefully this guide can help you to facilitate the process or if you come across problems.<p>
 Feel free to provide feedback for anyone reading this guide and if this worked for you, please provide feedback and how long it took you to get up and running Traefik thanks.
 
-Other Collections of Self Hosted Treafik setups to consider:
+Other Collections of Self Hosted setups to consider:
 * https://gitlab.com/NickBusey/HomelabOS
 * https://github.com/IceWhaleTech/CasaOS
 * https://github.com/SimonHaas/homeserver
