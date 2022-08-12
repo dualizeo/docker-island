@@ -21,7 +21,8 @@ To start it is Recommended but no necessary using ProxMox for creating Virtual U
 # 1. Install Docker 🐳 + Docker Compose 🐙
 <details>
   <summary> Install Docker & Docker Compose </summary>
-Docker Installation Follow along video ( watch up until 14:07 and be finished ) : https://www.youtube.com/watch?v=EL1Ex04iUcA 
+Docker Installation Follow along video:<p>
+ Start at 2:20 https://youtu.be/EL1Ex04iUcA?t=140 ( watch up until 14:07 and be finished ) : https://www.youtube.com/watch?v=EL1Ex04iUcA 
 </details>
  
 # 2. DNS ( Domain Name System ) 🧭
