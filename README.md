@@ -85,7 +85,7 @@ In CloudFlare make sure you create the api token before you proceed!
 
 `cd /apps`
 
-git clone https://github.com/traefikturkey/onramp.git onramp
+`git clone https://github.com/traefikturkey/onramp.git`
 
 `cd onramp`
 
