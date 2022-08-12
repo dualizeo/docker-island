@@ -149,9 +149,11 @@ Hopefully this guide can help you to facilitate the process or if you come acros
 Feel free to provide feedback for anyone reading this guide and if this worked for you, please provide feedback and how long it took you to get up and running Traefik thanks.
 
 Other Collections of Self Hosted Treafik setups to consider:
-* https://github.com/PAPAMICA/docker-compose-collection
+* https://gitlab.com/NickBusey/HomelabOS
+* https://github.com/IceWhaleTech/CasaOS
 * https://github.com/SimonHaas/homeserver
 * https://github.com/BaptisteBdn/docker-selfhosted-apps
+* https://github.com/PAPAMICA/docker-compose-collection
 * https://github.com/VirtualEstatePlanner/MegaDocker
 * https://virtualestateplanner.github.io/MegaDocker/
  Or using A different VPS Setup that uses Nginx Reverse proxy instead of Traefik: https://github.com/caprover/caprover
