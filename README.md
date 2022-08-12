@@ -104,12 +104,12 @@ That's where the make start-staging script should run.
 
 Also if you mess up, don't stress out, you can edit the script again since you are in Staging ( Testing Mode )
 
-*** Now that you have filled out your:**<p>
-CF_API_EMAIL=your email<p>
-CF_DNS_API_TOKEN=blablaToKenblablaEXAMPLE<p>
-HOST_NAME=PCname<p>
-HOST_DOMAIN=yourdomain.com<p>
-TZ=US/City<p>
+*** Now that you have filled out your:**<p><b>
+CF_API_EMAIL=your email<br>
+CF_DNS_API_TOKEN=blablaToKenblablaEXAMPLE<br>
+HOST_NAME=PCname<br>
+HOST_DOMAIN=yourdomain.com<br>
+TZ=US/City<p></b>
 
 All there is to do is hit Left Ctrl + X to save! then it will say File Name to Write: .env<p>
 Hit ENTER<p>
@@ -132,7 +132,7 @@ Awesome if you did! Last thing to do now, is to take down the staging certificat
 
 `make down-staging`
 and
-`make`
+`make`<p>
 ^ this will get your real SSL certificates.
 
 Congrats now it's time to start spinning up instances of Docker services using the OnRamp commands: <p>
@@ -140,7 +140,7 @@ Congrats now it's time to start spinning up instances of Docker services using t
 
 and to install them for example: <p>
 `make enable-service portainer`
-`make restart`
+`make restart`<p>
 ^ After enabling a service, make sure to run (make restart) in order for the service to show up in your treafik dashboard.<p>
 </details>
 ---------------
