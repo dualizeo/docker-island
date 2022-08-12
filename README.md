@@ -3,7 +3,7 @@
 
 This documentation is a simple written summary to assist newcomers setting up a Self Hosted Envrionment using Using Ubuntu Desktop requiring SSL, Port mapping and internal routing of docker services. This guide is meant to an easy Reference for starting a self hosted network within an hour or two (hopefully). Keep in mind the guide is always work in progress to help you speed through the process.
 
-# 0. Setting up Proxmox 
+# 0. Setting up Proxmox 🧡
 To start it is Recommended but no necessary using ProxMox for creating Virtual Ubuntu environments.
  <details>
  <summary>Setup Proxmox:</summary> 
@@ -18,13 +18,13 @@ To start it is Recommended but no necessary using ProxMox for creating Virtual U
 </details>
  
    
-# 1. Install Docker + Docker Compose
+# 1. Install Docker 🐳 + Docker Compose 🐙
 <details>
   <summary> Install Docker & Docker Compose </summary>
 Docker Installation Follow along video ( watch up until 14:07 and be finished ) : https://www.youtube.com/watch?v=EL1Ex04iUcA 
 </details>
  
-# 2. DNS ( Domain Name System )
+# 2. DNS ( Domain Name System ) 🧭
 <details>
   <summary>Setup DNS for your Envrionment </summary>
 Before starting it is also recommended to have a DNS program to manage your SubDomain.MyDomains.com entries othewise it wil not work.
@@ -41,7 +41,7 @@ You can watch this video up till 4:06 and be done: https://youtu.be/dH3DdLy574M
 
 
 
-# 3. Setting up Your private domain name
+# 3. Setting up Your private domain name ⚓
 <details>
   <summary>  To start using Treafik </summary>
   it is Important to own a domain name as docker services will require SSL. You can purchase a cheap $6 dollar a year domain name preferably from CloudFlare or any other Service Provider.
@@ -58,7 +58,7 @@ In CloudFlare make sure you create the api token before you proceed!
 </details>
 
 
-# 4. Setting up Your Router 
+# 4. Setting up Your Router 📡
 <details>
   <summary> Configuring your Peronsal Router</summary>
  It is also important to do Port Mapping on your router in order to point the incoming SSL from CloudFlare connection to your internal Treafik computer.. the Ports from CloudFlare to your Ubuntu machine running Treafik example 192.168.10.etc. You can YouTube your router model on how to do port forwarding, it might be under WAN ->Virtual Server / Port Forwarding.
@@ -68,7 +68,7 @@ In CloudFlare make sure you create the api token before you proceed!
    I managed to get it working before using Tim's Guide SSL on everything without port forwarding but it might not work for other services. There is also another guide made by DB Tech to avoid using Port Forwarding, just by using CloudFlare Zero Trust Tunnels ( not tested yet, but I heard people were getting banned in the comments due to TOS violations from using streaming services like kodi ) https://www.youtube.com/watch?v=m-RYTu-Qq3A or https://youtu.be/RUJy9fjoiy4
    </details>
    
-# 5. Finally, Installing Treafik
+# 5. Finally, Installing Treafik 🚦
 <details>
   <summary> Configuring your Digital Router using OnRamp Setup:</summary>
 
