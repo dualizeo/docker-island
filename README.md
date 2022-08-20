@@ -143,6 +143,8 @@ and to install them for example: <p>
 `make restart`<p>
 ^ After enabling a service, make sure to run (make restart) in order for the service to show up in your treafik dashboard.<p>
 </details>
+ 
+ IF issues continue, consider doing `make down-staging` and restarting your OS to re-continue the sudo make start-staging ( to remove certs )
 ---------------
 
 Hopefully this guide can help you to facilitate the process or if you come across problems.<p>
