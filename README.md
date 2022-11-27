@@ -154,7 +154,7 @@ Feel free to provide feedback for anyone reading this guide and if this worked f
 # Other Collections of Self Hosted setups to consider:
 * https://github.com/meienberger/runtipi
 * https://gitlab.com/NickBusey/HomelabOS
-* https://umbrel.com/
+* [https://umbrel.com/](https://github.com/getumbrel/umbrel)
 * https://github.com/IceWhaleTech/CasaOS
 * https://github.com/SimonHaas/homeserver
 * https://caprover.com/
