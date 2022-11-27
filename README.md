@@ -1,7 +1,6 @@
 # Docker-island 🏝🐳
 ## Newest way of setting up a Self-Hosted private cloud in 2022  🔒☁😎👍 
-### 🚨🚧 Before going through this entire process,
-scroll to the bottom for ( Other Collections of Self Hosted setups to consider ) 🚧🚨
+#### 🚨🚧 Before going through this entire process, scroll to the bottom for ( Other Collections of Self Hosted setups to consider ) 🚧🚨
 
 This documentation is a simple written summary to assist newcomers setting up a Self Hosted Envrionment using Ubuntu Desktop requiring SSL, Port mapping and internal routing of docker services. This guide is meant to be an easy Reference for starting a self hosted network within an hour or two (hopefully). Keep in mind the guide is always work in progress to help you speed through the process.
 
