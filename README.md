@@ -152,16 +152,15 @@ Hopefully this guide can help you to facilitate the process or if you come acros
 Feel free to provide feedback for anyone reading this guide and if this worked for you, please provide feedback and how long it took you to get up and running Traefik thanks.
 
 # Other Collections of Self Hosted setups to consider:
+* https://github.com/getumbrel/umbrel
 * https://github.com/meienberger/runtipi
 * https://gitlab.com/NickBusey/HomelabOS
-* [https://umbrel.com/](https://github.com/getumbrel/umbrel)
 * https://github.com/IceWhaleTech/CasaOS
 * https://github.com/SimonHaas/homeserver
-* https://caprover.com/
+* https://github.com/caprover/caprover
 * https://github.com/BaptisteBdn/docker-selfhosted-apps
 * https://github.com/PAPAMICA/docker-compose-collection
 * https://github.com/VirtualEstatePlanner/MegaDocker
 * https://virtualestateplanner.github.io/MegaDocker/
- Or using A different VPS Setup that uses Nginx Reverse proxy instead of Traefik: https://github.com/caprover/caprover
 
  (Recommended but no necessary)  installing an open source fast forwarding google chrome extension to go through YouTube videos at 2x or 3x the speed. https://github.com/igrigorik/videospeed 
